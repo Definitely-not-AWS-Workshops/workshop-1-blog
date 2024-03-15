@@ -15,7 +15,7 @@ The following AWS architecture will be implemented using Terraform, and Terrafor
 ![AWS architecture diagram](/images/0/0001.svg?featherlight=false&width=100pc)
 
 {{% notice note %}}
-The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. In addition, CI/CD strategies are not followed by the web and app source code repository. For the sake of demonstration, we just deploy repositories straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [Further Improvements]().
+The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. CI/CD strategies are also not followed by the web and app source code repository. For the sake of demonstration, we just deploy repositories straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [Further Improvements]().
 {{% /notice %}}
 
 #### Target Audience
@@ -27,6 +27,7 @@ Those participating in this workshop are expected to have the following:
 - Basic understanding of [Terraform](https://www.terraform.io/).
 - Basic understanding of [Github Actions](https://docs.github.com/en/actions).
 - Basic understanding of [Docker](https://www.docker.com/).
+- Have your own domain name.
 
 We would focus more on technical decisions and hands-on steps, this workshop thus would not serve as an exhaustive introduction to AWS and Terraform.
 
