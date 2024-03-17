@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 3.2 </b> "
 ---
 
-We are going to initialize the *workshop-1-tf-live* repository with the following folder structure:
+You are going to initialize the *workshop-1-tf-live* repository with the following folder structure:
 
 ```git
 workshop-1-tf-live/
@@ -37,7 +37,7 @@ workshop-1-tf-live/
             ├── (files and subfolders related to web module)
 ```
 
-**1.** Go to your GitHub profile `github.com/<username>`. Remember to replace your GitHub username with *\<username\>*. Mine is [github.com/tulna07](https://github.com/tulna07), for example.
+**1.** Go to your GitHub profile `github.com/<you-github-username>`. Mine is [github.com/tulna07](https://github.com/tulna07), for example.
 
 **2.** Click the dropdown and select **New repository**.
 
@@ -95,7 +95,7 @@ git commit -m "first commit" && \
 git push --set-upstream origin main
 ```
 
-**11.** The GitHub repository after the first commit. We would later push Terraform module implementations from the local repository and remove *.gitkeep*. 
+**11.** The GitHub repository after the first commit. You would later push Terraform module implementations from the local repository and remove *.gitkeep*. 
 
 ![0004](/images/3/2/0004.svg?featherlight=false&width=100pc)
 

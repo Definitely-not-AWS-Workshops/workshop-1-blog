@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 
-Before diving into the workshop, we will begin by understanding the essential AWS architecture, Terraform modules, Terraform Cloud workspaces for AnimeHub.
+Before diving into the workshop, you will begin by understanding the essential AWS architecture, Terraform modules, Terraform Cloud workspaces for AnimeHub.
 
 {{% notice note %}}
 If you missed it, please read [Introduction](../1-Introduction/) to learn about how crucial it is of developing AnimeHub infrastructure with AWS and Terraform before progressing.

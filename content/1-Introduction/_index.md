@@ -16,11 +16,11 @@ AnimeHub currently allows lovers of anime to share their favorite Japanese-style
 
 ![AnimeHub share page](/images/1/0002.svg?featherlight=false&width=45pc)
 
-The days of tedious on-premise resource maintenance and manual configuration of the AnimeHub backbone will be over thanks to AWS and Terraform, which allowed AinimeHub developers to concentrate on what really mattered — creating a memorable anime-sharing experience.
+The days of tedious on-premise resource maintenance and manual configuration of the AnimeHub backbone will be over thanks to AWS and Terraform, which allow AinimeHub developers to concentrate on what really mattered — creating a memorable anime-sharing experience.
 
-The next three pages provide a quick overview of Infrastructure as Code (IaC), Terraform, and notable features of Terraform (Terraform modules and Terraform Cloud workspaces), which are the main things we use in this workshop. You will mainly focus on  creating nessessary Terraform modules manually and apply Terraform Cloud to helps teams use Terraform together. 
+The next three pages provide a quick overview of Infrastructure as Code (IaC), Terraform, and notable features of Terraform (Terraform modules and Terraform Cloud workspaces), which are the main things you use in this workshop. You will mainly focus on  creating nessessary Terraform modules manually and apply Terraform Cloud to helps teams use Terraform together. 
 
-If you feel confident with those concepts, proceed to the [High-Level Design](../2-High-Level-Design/) section to explore AnimeHub's AWS architecture, Terraform modules, and Terraform Cloud workspaces in depth before engaging in hands-on work.
+If you feel confident with those concepts, proceed to the [High-Level Design](../2-High-Level-Design/) section to explore the designs of AWS architecture, Terraform modules, and Terraform Cloud workspaces for AnimeHub in depth before engaging in hands-on work.
 
 #### Content
 
