@@ -23,11 +23,12 @@ While people in technical roles are the target audience for this beginning level
 
 Those participating in this workshop are expected to have the following:
 - AWS, GitHub, and Terraform Cloud accounts.
-- Familiar with AWS infrastructure and services.
+- Familiar with AWS CLI and services.
 - Basic understanding of [Terraform](https://www.terraform.io/).
 - Basic understanding of [Github Actions](https://docs.github.com/en/actions).
 - Basic understanding of [Docker](https://www.docker.com/).
-- Have your own domain name.
+- Basic understanding of shell and git commands
+- Your own domain name.
 
 We would focus more on technical decisions and hands-on steps, this workshop thus would not serve as an exhaustive introduction to AWS and Terraform.
 
@@ -43,7 +44,7 @@ To avoid incurring charges, move to the [Clean Up]() section after the worksho
 
 #### Github Repositories ####
 
-Visit the following Github repositories to find the workshop source codes:
+Visit the following Github repositories to find the complete workshop source codes:
 
 |  Repository |  Description |
 |---|---|

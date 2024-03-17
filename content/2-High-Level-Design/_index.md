@@ -12,6 +12,8 @@ Before diving into the workshop, we will begin by understanding the essential AW
 If you missed it, please read [Introduction](../1-Introduction/) to learn about how crucial it is of developing AnimeHub infrastructure with AWS and Terraform before progressing.
 {{% /notice %}}
 
+#### Content
+
 1. [AWS Architecture](1-AWS-Architecture)
 2. [Terraform Modules](2-Terraform-Modules)
 3. [Terraform Cloud Workspaces](3-Terraform-Cloud-Workspaces)

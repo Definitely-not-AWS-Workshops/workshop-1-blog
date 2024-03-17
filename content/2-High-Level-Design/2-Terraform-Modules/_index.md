@@ -118,17 +118,17 @@ Terraform automatically explore dependencies between resources placed in a confi
 If you still prefer to use Terraform modules while simultaneously avoiding such problems, you should consider using third-party tools or developing your own.
 {{% /notice %}}
 
-You can call modules in *main.tf* file from a single root module, as shown below. Terraform will detect dependencies between them if necessary, and you can execute all modules in a single run. You may again fall into a single-point-of-failure situation, potentially destroying your infrastructure all at once.
+You can call modules in *main.tf* file from a single root module, as shown below. Terraform will detect dependencies between them if necessary, and you can execute all modules in a single run. However, you may again fall into a single-point-of-failure situation, potentially destroying your infrastructure all at once.
 
-```
-root-module
+```git
+root-module/
 ├── main.tf
 │
-├── network
+├── network/
 │   ├── main.tf
 │   └── ...
 │
-└── web
+└── web/
     ├── main.tf
     └── ...
 ```

@@ -1,9 +1,9 @@
 ---
 title : "Further Improvements"
 date : "`r Sys.Date()`"
-weight : 4
+weight : 5
 chapter : false
-pre : " <b> 4. </b> "
+pre : " <b> 5. </b> "
 ---
 
 You may be interested in the following recommendations for improving the workshop in the future.
@@ -18,7 +18,7 @@ There are different AWS services that might be helpful for the growth of the A
 
 #### Operations and Workflows
 
-To assist teams in effectively adopting AWS and streamlining software engineering processes the following enhancements to the workshop are recommended for the future:
+In addition to security and cost optimization for AWS services at scale, ensuring infrastructure deployment reliability is particularly challenging. To assist teams in effectively adopting AWS and streamlining software engineering processes the following enhancements to the workshop are recommended for the future:
 
 + Use Terraform Cloud API-driven run workflow for more complex CI/CD practices.
 + Consider to leverage [Terraform AWS modules](https://github.com/terraform-aws-modules) — a collection of Terraform AWS modules supported by the community or other reliable remote modules to speed up the development process.
@@ -28,4 +28,4 @@ To assist teams in effectively adopting AWS and streamlining software engineerin
 + Use more operational techniques (rollback strategies, deployment strategies, promoting through environments, etc.) to deliver AWS-based infrastructure that is manageable and reliable.
 + Provide sandbox accounts for testing AWS resources and use an AWS account for each environment.
 
-Your team will be able to deploy more quickly and react to changes more quickly if Terraform is used correctly. Deployments should eventually become normal and uninteresting, which is a really positive thing in the world of operations. Furthermore, if you truly do a good job of managing infrastructure, your team will be able to spend more and more time using it, which will enable you to move even more quickly, as opposed to having to manage it all by hand.
+Your team will be able to deploy more quickly and react to changes more quickly and safely if Terraform and collaboration workflows are applied correctly. Deployments should eventually become normal and uninteresting, which is a really positive thing in the world of operations. Furthermore, if you truly do a good job of managing infrastructure, your team will be able to spend more and more time using it, which will enable you to move even more quickly, as opposed to having to manage it all by hand.
