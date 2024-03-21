@@ -14,25 +14,25 @@ workshop-1-tf-modules/
 └── modules/
     │
     ├── network/
-    │   ├── (files and subfolders related to network module)
+    │   ├── (files and submodules related to network module)
     │
     ├── image-repository/
-    │   ├── (files and subfolders related to image repository module)
+    │   ├── (files and submodules related to image repository module)
     │
     ├── database/
-    │   ├── (files and subfolders related to database module)
+    │   ├── (files and submodules related to database module)
     │
     ├── security/
-    │   ├── (files and subfolders related to security module)
+    │   ├── (files and submodules related to security module)
     │
     ├── routing/
-    │   ├── (files and subfolders related to routing module)
+    │   ├── (files and submodules related to routing module)
     │
     ├── app/
-    │   ├── (files and subfolders related to app module)
+    │   ├── (files and submodules related to app module)
     │
     └── web/
-        ├── (files and subfolders related to web module)
+        ├── (files and submodules related to web module)
 
 ```
 
@@ -79,11 +79,16 @@ cd workshop-1-tf-modules
 touch .gitkeep
 ```
 
-**9.** Initialize the local repository and link to the remote repository.
+Until this step, you have created the *workshop-1-tf-modules* local repository with the folder structure:
+
+![0004](/images/3/1/0004.svg?featherlight=false&width=17pc)
+
+
+**9.** Initialize the local repository and link to the remote repository. Replace *\<your-github-username\>* with your GitHub username.
 
 ```git
 git init && \
-git remote add origin https://github.com/tulna07/workshop-1-tf-modules.git
+git remote add origin https://github.com/<your-github-username>/workshop-1-tf-modules.git
 ```
 
 **10.** Push the first commit to the remote repository.
@@ -96,6 +101,6 @@ git push --set-upstream origin main
 
 **11.** The GitHub repository after the first commit. You would later push Terraform module implementations from the local repository and remove *.gitkeep*. 
 
-![0004](/images/3/1/0004.svg?featherlight=false&width=100pc)
+![0005](/images/3/1/0005.svg?featherlight=false&width=100pc)
 
 

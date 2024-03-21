@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 3.4 </b> "
 ---
 
-In this section, you are going to set up the Terraform Cloud organization and project. You also add AWS credentials and VCS provider.
+In this section, you are going to set up the Terraform Cloud organization and project. You also add AWS credentials and GitHub VCS provider.
 
 To continue with the instructions below, you will need a Terraform Cloud account. Sign in if you have one or create a new account at [app.terraform.io](https://app.terraform.io/).
 

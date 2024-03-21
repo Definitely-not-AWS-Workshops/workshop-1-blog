@@ -28,7 +28,7 @@ Follow the steps below to obtain the required AWS access keys for Terraform Clou
 
 ![0005](/images/3/3/0005.svg?featherlight=false&width=100pc)
 
-**6.** After acquiring the keys, you should keep them secure. On the following page, you utilize them to configure Terraform Cloud workspaces.
+**6.** After acquiring the keys, you should keep them secure. On the following page, you utilize them to configure Terraform Cloud settings.
 
 ![0006](/images/3/3/0006.svg?featherlight=false&width=100pc)
 

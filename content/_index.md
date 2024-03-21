@@ -39,7 +39,7 @@ The estimated duration for completing this workshop is **around 3 hours**.
 Assume that you own a domain name. The services used in this workshop charge per usage, although most of them have a free tier, so unless you used the free tier for other workloads, it will cost you **under $0.5** to run this workshop. Please look at the different services' pricing pages to see their cost.
 
 {{% notice warning %}}
-To avoid incurring charges, move to the [Clean Up]() section after the workshop to clean up the resources provisioned.
+To avoid incurring charges, move to the [Cleanup](./8-Cleanup/) section after the workshop to clean up the resources provisioned.
 {{% /notice %}}
 
 #### Github Repositories ####
@@ -48,17 +48,22 @@ Visit the following Github repositories to find the complete workshop source cod
 
 |  Repository |  Description |
 |---|---|
-| [workshop&#8209;1&#8209;web&#8209;app](https://github.com/Definitely-not-AWS-Workshops/workshop-1-web-app)  |  This repository contains source codes for both web and app components. You will deploy these components to prvisioned AWS infrastructure|
+| [workshop&#8209;1&#8209;web&#8209;app](https://github.com/Definitely-not-AWS-Workshops/workshop-1-web-app)  |  This repository contains the source code for both web and app components. You will deploy these components to prvisioned AWS infrastructure|
 |  [workshop&#8209;1&#8209;tf&#8209;modules](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-modules) |  This repository defines reusable modules. Consider every module to be a *"blueprint"* that describes specific elements of your infrastructure  |
-|  [workshop&#8209;1&#8209;tf&#8209;live](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-live) | This repository defines the live infrastructure you are running in each environment (stage, prod, mgmt, etc.). Consider this as the *"houses"* you constructed using the *"blueprints"* found in the [workshop-1-tf-modules]() |
+|  [workshop&#8209;1&#8209;tf&#8209;live](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-live) | This repository defines the live infrastructure you are running in each environment (stage, prod, mgmt, etc.). Consider this as the *"houses"* you constructed using the *"blueprints"* found in the [workshop-1-tf-modules](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-modules) |
 
 
 #### Main Content
 
-1. [Creating a new AWS Account](1-create-new-aws-account/)
-2. [Setting up MFA for the AWS Account root user](2-MFA-Setup-For-AWS-User-(root))
-3. [Creating an Administrator Accounts and Groups](3-create-admin-user-and-group/)
-4. [Getting support for Account Authentication](4-verify-new-account/)
+1. [Introduction](./1-Introduction/)
+2. [High-Level Design](./2-High-Level-Design/)
+3. [Preparation](./3-Preparation/)
+4. [Terraform Modules Repository](./4-Terraform-Modules-Repository/)
+5. [Terraform Live Repository](./5-Terraform-Live-Repository/)
+6. [AnimeHub Deployment](./6-AnimeHub-Deployment/)
+7. [Experiments](./7-Experiments/)
+8. [Cleanup](./8-Cleanup/)
+9. [Further Improvements](./9-Further-Improvements/)
 <!-- need to remove parenthesis for path in Hugo 0.88.1 for Windows-->
 
 

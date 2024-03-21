@@ -10,8 +10,8 @@ Next, you are going to create two GitHub repositories named *workshop-1-tf-modul
 
 #### Content
 
-1. [Modules Repository](1-Modules-Repository)
-2. [Live Repository](2-Live-Repository)
-3. [AWS Credentials](3-AWS-Credentials)
+1. [Terraform Modules Repository](./1-Terraform-Modules-Repository/)
+2. [Terraform Live Repository](./2-Terraform-Live-Repository/)
+3. [AWS Credentials](./3-AWS-Credentials)
 4. [Terraform Cloud General Settings](4-Terraform-Cloud-General-Settings)
-5. [Terraform Cloud Workspaces](4-Terraform-Cloud-Workspaces)
+5. [Terraform Cloud Workspaces](5-Terraform-Cloud-Workspaces)
