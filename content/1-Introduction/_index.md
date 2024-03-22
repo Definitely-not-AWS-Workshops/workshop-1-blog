@@ -20,7 +20,7 @@ The days of tedious on-premise resource maintenance and manual configuration of 
 
 The next three pages provide a quick overview of Infrastructure as Code (IaC), Terraform, and notable features of Terraform (Terraform modules and Terraform Cloud workspaces), which are the main things you use in this workshop. You will mainly focus on  creating nessessary Terraform modules manually and apply Terraform Cloud to helps teams use Terraform together. 
 
-If you feel confident with those concepts, proceed to the [2 High-Level Design](../2-high-level-design/) section to explore the designs of AWS architecture, Terraform modules, and Terraform Cloud workspaces for AnimeHub in depth before engaging in hands-on work.
+If you feel confident with those concepts, proceed to the [2. High-Level Design](../2-high-level-design/) section to explore the designs of AWS architecture, Terraform modules, and Terraform Cloud workspaces for AnimeHub in depth before engaging in hands-on work.
 
 #### Content
 

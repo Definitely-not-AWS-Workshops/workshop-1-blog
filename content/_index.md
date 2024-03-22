@@ -15,7 +15,7 @@ The following AWS architecture will be implemented using Terraform, and Terrafor
 ![AWS architecture diagram](/images/0/0001.svg?featherlight=false&width=100pc)
 
 {{% notice note %}}
-The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. CI/CD strategies are also not followed by the web and app source code repository. For the sake of demonstration, you just deploy the repository straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [Further Improvements](./9-further-improvements/).
+The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. CI/CD strategies are also not followed by the web and app source code repository. For the sake of demonstration, you just deploy the repository straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [9. Further Improvements](./9-further-improvements/).
 {{% /notice %}}
 
 #### Target Audience
@@ -39,7 +39,7 @@ The estimated duration for completing this workshop is **around 3 hours**.
 Assume that you own a domain name. The services used in this workshop charge per usage, although most of them have a free tier, so unless you used the free tier for other workloads, it will cost you **under $0.5** to run this workshop. Please look at the different services' pricing pages to see their cost.
 
 {{% notice warning %}}
-To avoid incurring charges, move to the [Cleanup](./8-cleanup/) section after the workshop to clean up the resources provisioned.
+To avoid incurring charges, move to the [8. Cleanup](./8-cleanup/) section after the workshop to clean up the resources provisioned.
 {{% /notice %}}
 
 #### Github Repositories ####

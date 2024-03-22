@@ -84,7 +84,7 @@ git push --follow-tags
 
 #### Create A Pull Request to Terraform Live Repository on GitHub
 
-In section [5 Terraform Live Repository](../5-terraform-live-repository/), you initiated the first Terraform Cloud workspace runs manually via UI. You may now try to create a Pull Request, view plan, and merge back into the main branch to start the run automatically.
+In section [5. Terraform Live Repository](../5-terraform-live-repository/), you initiated the first Terraform Cloud workspace runs manually via UI. You may now try to create a Pull Request, view plan, and merge back into the main branch to start the run automatically.
 
 **1.** Move to your *workshop-1-tf-live* local repository.
 
