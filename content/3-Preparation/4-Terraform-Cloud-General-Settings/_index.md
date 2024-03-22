@@ -66,7 +66,7 @@ A *variable set* allows you to create both input variables and environmental v
 
 ![00012](/images/3/4/00012.svg?featherlight=false&width=100pc)
 
-**14.** Select **Environment variable**. Enter **AWS_ACCESS_KEY_ID** as key, and the value is your access key id you obtained in [3.3 AWS Credentials](../3-AWS-Credentials/). Click **Sensitive**, then **Add variable**.
+**14.** Select **Environment variable**. Enter **AWS_ACCESS_KEY_ID** as key, and the value is your access key id you obtained in [3.3 AWS Credentials](../3-aws-credentials/). Click **Sensitive**, then **Add variable**.
 
 ![00013](/images/3/4/00013.svg?featherlight=false&width=100pc)
 
