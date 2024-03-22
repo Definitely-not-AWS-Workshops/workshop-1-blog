@@ -39,4 +39,4 @@ Please destroy the resources in the following order: web, app, routing, security
 ![0006](/images/8/0006.svg?featherlight=false&width=100pc)
 
 
-**7.** Do the same for the remaining modules from step **1**. Remember to enter the corresponding workspace name in step **4**.
+**7.** Do the same for the remaining workspaces from step **1**. Remember to enter the corresponding workspace name in step **4**.

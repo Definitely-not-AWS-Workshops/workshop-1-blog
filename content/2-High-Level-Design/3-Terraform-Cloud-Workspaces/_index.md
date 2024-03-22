@@ -37,7 +37,7 @@ You would take the recommendations to identify the Terraform Cloud workspaces ne
 
 #### Terraform Cloud Workspace Proposal
 
-Since you determined the modules needed for AnimeHub in the previous section, it is now easier to discover Terraform Cloud workspaces for AnimeHub. For the purpose of demonstration, only workspaces for the development environment will be created. The following workspaces will be set up in the hands-on sections:
+Since you determined the modules needed for AnimeHub in the previous section, it is now easier to discover Terraform Cloud workspaces for AnimeHub. For the purpose of demonstration, only workspaces for the development environment will be developed. The following workspaces will be set up in the hands-on sections:
 
 ![0002](/images/2/3/0002.svg?featherlight=false&width=50pc)
 
@@ -57,11 +57,12 @@ You are going to implement two Terraform repositories: one for root modules, *wo
 In the workshop, both repositories are accessible to the public. In real world, you should consider making your repositories private or moving them to a private Terraform registry.
 {{% /notice %}}
 
-Your Terraform Cloud workspaces will connect to the *workshop-1-tf-live* repository. Updates from the repository that are compatible with your Terraform Cloud workspace settings will trigger a workspace run. This may involve a plan for team review before applying or destroying your AWS infrastructure.
+Your Terraform Cloud workspaces will be connected to the *workshop-1-tf-live* repository. Updates from the repository that are compatible with your Terraform Cloud workspace settings will trigger a workspace run in Terrafornm Cloud. This may involve a plan for team review before applying or destroying your AWS infrastructure.
 
-You now have the AWS architecture and deployment pipelines for both AnimeHub platform and its infrastructure.
+You now have the following AWS architecture and deployment pipelines for both AnimeHub platform and its infrastructure:
 
 ![0004](/images/2/3/0004.svg?featherlight=false&width=100pc)
+
 
 
 

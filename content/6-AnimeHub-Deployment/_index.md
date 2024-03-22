@@ -98,31 +98,31 @@ git tag -a "v1.0.0" -m "release v1.0.0"
 git push --follow-tags
 ```
 
-**19.** Click **Actions** tab on your GitHub repository.
+**18.** Click **Actions** tab on your GitHub repository.
 
 ![0009](/images/6/0009.svg?featherlight=false&width=100pc)
 
-**20.** You will see GitHub Actions trigger two workflows that deploy AnimeHub's frontend and backend. Check out *deploy-frontend.yml* and *deploy-backend.yml* files in *.github/workflows* folder to discover more how AnimeHub deployment workflows work.
+**19.** You will see GitHub Actions trigger two workflows that deploy AnimeHub's frontend and backend. Check out *deploy-frontend.yml* and *deploy-backend.yml* files in *.github/workflows* folder to discover more how AnimeHub deployment workflows work.
 
 ![00010](/images/6/00010.svg?featherlight=false&width=100pc)
 
-**21.** Wait for the workflows to complete.
+**20.** Wait for the workflows to complete.
 
 ![00011](/images/6/00011.svg?featherlight=false&width=100pc)
 
-**22.** Check out AnimeHub at at your domain name. Mine is [https://animehub.tulna07.site](https://animehub.tulna07.site/), for example. Yes! you are successfully access AnimeHub with **https** and your own domain name.
+**21.** Check out AnimeHub at at your domain name. Mine is [https://animehub.tulna07.site](https://animehub.tulna07.site/), for example. Yes! you are successfully access AnimeHub with **https** and your own domain name.
 
 ![00012](/images/6/00012.svg?featherlight=false&width=100pc)
 
-**23.** Let us try to share something with other Anime fans worldwide. Click **Share**.
+**22.** Let us try to share something with other Anime fans worldwide. Click **Share**.
 
 ![00013](/images/6/00013.svg?featherlight=false&width=100pc)
 
-**24.** Fill out the **Anime Name** field as `Naruto Shippuden - Chapter 391`, the **Link** field as `https://www.youtube.com/watch?v=Pf5JDzTT8xE`, and the **Description** field as `The Returns of Uchiha Madara`. Otherwise, post your favorite anime instead. Click **Submit**.
+**23.** Fill out the **Anime Name** field as `Naruto Shippuden - Chapter 391`, the **Link** field as `https://www.youtube.com/watch?v=Pf5JDzTT8xE`, and the **Description** field as `The Returns of Uchiha Madara`. Otherwise, post your favorite anime instead. Click **Submit**.
 
 ![00014](/images/6/00014.svg?featherlight=false&width=100pc)
 
-**25.** Hurray! Your anime goes out to anime enthusiasts worldwide. You can share the link to your friends. Click **Watch** to enjoy now.
+**24.** Hurray! Your anime goes out to anime enthusiasts worldwide. You can share the link to your friends. Click **Watch** to enjoy now.
 
 ![00015](/images/6/00015.svg?featherlight=false&width=100pc)
 

@@ -31,7 +31,7 @@ You would take the recommendations to identify the Terraform modules needed to m
 
 #### Module Proposal
 
-As mentioned in previous section — [AWS Architecture](../1-AWS-Architecture/) , AnimeHub is divided into three main parts: web, app, and database: 
+As mentioned in previous section — [2.1 AWS Architecture](../1-AWS-Architecture/) , AnimeHub is simply divided into three main parts: web, app, and database: 
 
 - The **Web tier** requires an S3 bucket for static website hosting and CloudFront for content delivery.
 
@@ -43,7 +43,7 @@ In combination with these tier-based AWS services and additional services, you h
 
 ![AWS architecture diagram](/images/2/2/0001.svg?featherlight=false&width=100pc)
 
-After examining of the backbone AWS services of AnimeHub, you group the application infrastructure into the following modules: Network, Image Repository, Database, Security, Routing, App, and Web.
+After examining of the backbone AWS services of AnimeHub, you group the application infrastructure into the following modules: network, image repository, database, security, routing, app, and web.
 
 {{% notice note %}}
 In addition to the core AWS services used in each module, you may declare additional services or make module calls from other modules.
@@ -111,7 +111,7 @@ This module contains these resources because they have **high privilege** and **
 
 **App module**
 
-The app module creates and manages the infrastructure needed to run the app tier application. Together with ECS Fargate, Elastic Load Balancing, and Auto Scaling Group, it also includes VPC Endpoints for connecting to the Image Repository and Database module. This module calls the AWS Certificate Manager, as defined in the Security module, to produce a TSL certificate.
+The app module creates and manages the infrastructure needed to run the app tier application. Together with ECS Fargate, Application Load Balancer, and Auto Scaling Group, it also includes VPC Endpoints for connecting to the Image Repository and Database module. This module calls the AWS Certificate Manager, as defined in the Security module, to produce a TSL certificate.
 
 ![App module](/images/2/2/0007.svg?featherlight=false&width=37pc)
 

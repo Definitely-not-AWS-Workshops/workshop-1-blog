@@ -17,3 +17,7 @@ Rather than requiring you to manage Terraform runs locally, [Terraform Cloud](ht
 Your team can work collaboratively on every stage of the infrastructure development process with Terraform Cloud. For instance, your team can evaluate and approve the plan before you implement it every time you plan a new modification. In order to avoid concurrent modifications that can corrupt the state file, it also automatically locks the state during operations.
 
 ![Terraform Cloud](/images/1/3/0001.svg?featherlight=false&width=100pc)
+
+{{% notice info %}}
+Try out [Reuse Configuration with Modules](https://developer.hashicorp.com/terraform/tutorials/modules) and [Collaborate using Terraform Cloud](https://developer.hashicorp.com/terraform/tutorials/cloud) - Terraform’s tutorials for short hands-on.
+{{% /notice %}}
