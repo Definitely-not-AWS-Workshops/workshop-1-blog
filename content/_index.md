@@ -60,7 +60,7 @@ Visit the following Github repositories to find the complete workshop source cod
 3. [Preparation](./3-preparation/)
 4. [Terraform Modules Repository](./4-terraform-modules-repository/)
 5. [Terraform Live Repository](./5-terraform-live-repository/)
-6. [AnimeHub Deployment](./6-animeHub-deployment/)
+6. [AnimeHub Deployment](./6-animehub-deployment/)
 7. [Experiments](./7-experiments/)
 8. [Cleanup](./8-cleanup/)
 9. [Further Improvements](./9-further-improvements/)
