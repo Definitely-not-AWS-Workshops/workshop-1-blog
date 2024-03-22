@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5. </b> "
 ---
 
-In this stage, you continue to develop the *workshop-1-tf-live* repository, which was prepared in [3.2 Terraform Live Repository](../../3-Preparation/2-Terraform-Live-Repository/). You would call modules from *workshop-1-tf-modules* GitHub repository that you set up in previous section.
+In this stage, you continue to develop the *workshop-1-tf-live* repository, which was prepared in [3.2 Terraform Live Repository](../3-preparation/2-terraform-live-repository/). You would call modules from *workshop-1-tf-modules* GitHub repository that you set up in previous section.
 
 You are going to provision our AWS resources to the *us-east-1* region.
 
