@@ -10,7 +10,9 @@ Congratulations! What a lengthy workshop! Finally, you provided the AnimeHub tea
 
 You now clean up the Terraform-provisioned AWS resources. Cleaning up resources with Terraform may be faster and less error-prone than manually deleting. 
 
+{{% notice note %}}
 Please destroy the resources in the following order: web, app, routing, security, database, image repository, and network workspace.
+{{% /notice %}}
 
 **1.** Navigate to your **dev-web** Terraform Cloud workspace interface. Click **Settings**.
 

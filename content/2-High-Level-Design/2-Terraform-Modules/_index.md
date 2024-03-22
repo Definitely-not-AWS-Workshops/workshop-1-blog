@@ -179,10 +179,7 @@ module "web" {
 
 You, otherwise, have to consider the risk of causing significant infrastructure damage against the convenience of automation with just one click. The AnimeHub team does not want to take the risk of shutting their platform down with a simple backbone update. You are going to assist them in identifying dependencies between modules and determining the appropriate order to provision the AnimeHub infrastructure.
 
-The graph below shows the inputs and outputs that describe the relationships between modules while ignoring module-specific inputs or outputs that do not indicate the connections between them. Additionally, the graph includes module execution orders numbered from **1** to **7**:
+The graph below shows the inputs and outputs that describe the relationships between modules while ignoring module-specific inputs or outputs that do not indicate the connections between them. Additionally, the graph includes module execution order numbered from **1** to **7**:
 
 ![AWS module dependencies](/images/2/2/0009.svg?featherlight=false&width=50pc)
 
-{{% notice note %}}
-It is obvious that several modules can be run in parallel; however, you should follow the sequence because Terraform Cloud does not support that. If you attempted to execute the workspace runs concurrently, Terraform Cloud would run the first confirmed run and queue others.
-{{% /notice %}}

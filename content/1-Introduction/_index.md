@@ -25,6 +25,6 @@ If you feel confident with those concepts, proceed to the [High-Level Design](..
 #### Content
 
 1. [What is Infrastructure as Code?](1-What-is-Infrastructure-as-Code)
-2. [What is Terraform?](2-What-is-Terraform)
+2. [What is Terraform?](./2-What-is-Terraform/)
 3. [Notable Features of Terraform](3-Notable-Features-of-Terraform)
 <!-- need to remove parenthesis for path in Hugo 0.88.1 for Windows-->

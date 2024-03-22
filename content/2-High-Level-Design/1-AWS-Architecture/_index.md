@@ -36,23 +36,19 @@ Allows you to serve static websites — such as single-page applications (ReactJ
 
 ![AWS CloudFront](/images/2/1/0003.svg?featherlight=false&height=100px&width=100px)
 
-A managed content delivery network (CDN) that speeds up distribution of AnimeHub's contents from S3 bucket to users worldwide. Furthermore, to secure your connection to CloudFront when using alternative domain names, you utilize [AWS Certificate Manager](https://docs.aws.amazon.com/acm/) to provide support for provisioning, administering, and renewing publicly trusted TLS certificates.
-
-{{% notice tip %}}
-Consider using [AWS WAF](https://docs.aws.amazon.com/waf/), a web application firewall, to protect your CloudFront distributions and origin servers from malicious attacks.
-{{% /notice %}}
+A managed content delivery network (CDN) that speeds up distribution of AnimeHub's contents from CloudFront's edge locations to users worldwide. Furthermore, to secure your connection to CloudFront when using alternative domain names, you utilize [AWS Certificate Manager](https://docs.aws.amazon.com/acm/) to provide support for provisioning, administering, and renewing publicly trusted TLS certificates.
 
 #### App Tier
 
 Developers on AnimeHub are passionate about [Docker](https://www.docker.com/) and containerized applications, and as you know, they are unwilling to deal with server management. Also, AnimeHub's server-side may handle massive workloads from anime fans around the world. They, therefore, can integrate [AWS Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html) and [AWS Auto Scaling](https://docs.aws.amazon.com/autoscaling/) with the [AWS ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html) service.
 
-Anime fans worldwide enjoy sharing their favorite anime with others. As a result, the platform's list of shared anime is constantly changing. Server-side caching and invalidation approaches for AnimeHub using AWS CloudFront would be challenging. Due to list caching, a fan may not see newly shared anime. As a result, you only use AWS CloudFront in front of the App tier, with the *CachingDisabled* policy, for any request to the */api* path.
+Anime fans worldwide enjoy sharing their favorite anime with others. As a result, the platform's list of shared anime is constantly changing. Server-side caching and invalidation approaches for AnimeHub using AWS CloudFront would be challenging. Due to list caching, a fan may not see his newly shared anime. Therefore, you only use AWS CloudFront in front of the App tier, with the *CachingDisabled* policy, for any request to the */api* path.
 
 **AWS ECS Fargate** 
 
 ![AWS ECS Fargate](/images/2/1/0004.svg?featherlight=false&height=100px&width=100px)
 
-AWS ECS Fargate is a technology that may be used with Amazon ECS to run AnimeHub RESTful API application's containers without the need to maintain servers or clusters of Amazon EC2 instances. Fargate eliminates the need to provision, configure, and scale virtual machine clusters to execute containers.
+AWS ECS Fargate is a technology that may be used within Amazon ECS to run AnimeHub RESTful API application's containers without the need to maintain servers or clusters of Amazon EC2 instances. Fargate eliminates the need to provision, configure, and scale virtual machine clusters to execute containers.
 
 **AWS Application Load Balancer**
 
@@ -64,7 +60,7 @@ AWS Application Load Balancer distributes incoming traffic among ECS Fargate t
 
 ![AWS Auto Scaling](/images/2/1/0006.svg?featherlight=false&height=100px&width=100px)
 
-AWS Auto Scaling helps you ensure that you have the correct number of ECS Fargate tasks available to handle the load for your application. You create collections of ECS Fargate tasks that run server-side AnimeHub's containers, called Auto Scaling groups. 
+AWS Auto Scaling helps you ensure that you have the correct number of ECS Fargate tasks available to handle the load for your application. An Auto Scaling group contains a collection of ECS Fargate tasks that are treated as a logical grouping for the purposes of automatic scaling and management. 
 
 {{% notice tip %}}
 Currently, your RESTfull API endpoint is exposed to the Internet. APIs deal with sensitive data. Authentication and authorization mechanisms should be implemented to protect the API endpoints by ensuring that only approved users or apps are able to manipulate the data.
@@ -86,7 +82,7 @@ The key AWS services for each tier are combined with other services to provide a
 - While there may be encryption in transit between AWS services, AWS ECS Fargate would be placed in two private subnets of an [AWS VPC](https://docs.aws.amazon.com/vpc/) for high availability and would securely connect to other services via [AWS VPC Endpoints](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html). As a result, the communication between these services is not exposed to the Internet.
 - You also use an [AWS ECR](https://docs.aws.amazon.com/ecr/) with private repository settings to reliably store our container images.
 - [AWS Identity and Access Management](https://docs.aws.amazon.com/iam/) might provide nessessary permissions for our access to the AWS environment.
-- [AWS Route 53](https://docs.aws.amazon.com/route53/), a highly available and scalable Domain Name System (DNS) web service, that allows us to use our registered domain name for other AWS services.
+- [AWS Route 53](https://docs.aws.amazon.com/route53/), a highly available and scalable Domain Name System (DNS) web service, that allows you to use your registered domain name for other AWS services.
 
 #### AWS Architecture
 

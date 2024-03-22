@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 9. </b> "
 ---
 
-You may be interested in the following recommendations for improving the workshop in the future.
+Last but not least! You may be interested in the following recommendations for improving the workshop in the future.
 
 #### AWS Services
 
@@ -14,7 +14,8 @@ There are different AWS services that might be helpful for the growth of the A
 
 + As AnimeHub serves a large number of anime fans worldwide, [AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/) — a service that improves the availability and performance of your applications with local or global users, might be useful.
 + Serverless services, such as [AWS API Gateway](https://docs.aws.amazon.com/apigateway/) and [AWS Lambda](https://docs.aws.amazon.com/lambda/), provide for on-demand server-side processing and cost reductions while also reducing server management overhead.
-+ [AWS WAF](https://docs.aws.amazon.com/waf/) — a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources.
++ [AWS WAF](https://docs.aws.amazon.com/waf/) — a web application firewall that lets you monitor and manage web requests that are forwarded to protected AWS resources. For example. it helps protect your CloudFront distributions and origin servers from malicious attacks.
+  
 
 #### Operations and Workflows
 

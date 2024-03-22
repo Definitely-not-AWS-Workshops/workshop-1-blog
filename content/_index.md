@@ -15,7 +15,7 @@ The following AWS architecture will be implemented using Terraform, and Terrafor
 ![AWS architecture diagram](/images/0/0001.svg?featherlight=false&width=100pc)
 
 {{% notice note %}}
-The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. CI/CD strategies are also not followed by the web and app source code repository. For the sake of demonstration, you just deploy the repository straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [Further Improvements]().
+The purpose of this workshop is not to create comprehensive CI/CD pipelines for Terraform-based AWS infrastructure deployment. It is desirable to include testing, process reviews, and even more software engineering methodologies to guarantee the reliability and reproducibility of your infrastructure across different environments. CI/CD strategies are also not followed by the web and app source code repository. For the sake of demonstration, you just deploy the repository straight from the *main* branch. You must work harder to ensure that the software and its backbone are deployed in a safe and efficient manner. For proposals on additional enhancements, see [Further Improvements](./9-Further-Improvements/).
 {{% /notice %}}
 
 #### Target Audience
@@ -48,7 +48,7 @@ Visit the following Github repositories to find the complete workshop source cod
 
 |  Repository |  Description |
 |---|---|
-| [workshop&#8209;1&#8209;web&#8209;app](https://github.com/Definitely-not-AWS-Workshops/workshop-1-web-app)  |  This repository contains the source code for both web and app components. You will deploy these components to prvisioned AWS infrastructure|
+| [workshop&#8209;1&#8209;web&#8209;app](https://github.com/Definitely-not-AWS-Workshops/workshop-1-web-app)  |  This repository contains the source code for both web and app components. You will deploy these components to AWS infrastructure|
 |  [workshop&#8209;1&#8209;tf&#8209;modules](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-modules) |  This repository defines reusable modules. Consider every module to be a *"blueprint"* that describes specific elements of your infrastructure  |
 |  [workshop&#8209;1&#8209;tf&#8209;live](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-live) | This repository defines the live infrastructure you are running in each environment (stage, prod, mgmt, etc.). Consider this as the *"houses"* you constructed using the *"blueprints"* found in the [workshop-1-tf-modules](https://github.com/Definitely-not-AWS-Workshops/workshop-1-tf-modules) |
 
