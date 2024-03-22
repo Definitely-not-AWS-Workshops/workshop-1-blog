@@ -55,8 +55,8 @@ Visit the following Github repositories to find the complete workshop source cod
 
 #### Main Content
 
-1. [Introduction](./1-Introduction/)
-2. [High-Level Design](./2-High-Level-Design/)
+1. [Introduction](./1-introduction/)
+2. [High-Level Design](./2-high-level-design/)
 3. [Preparation](./3-Preparation/)
 4. [Terraform Modules Repository](./4-Terraform-Modules-Repository/)
 5. [Terraform Live Repository](./5-Terraform-Live-Repository/)
