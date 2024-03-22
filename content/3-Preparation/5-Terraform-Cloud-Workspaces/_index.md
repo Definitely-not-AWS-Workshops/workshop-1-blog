@@ -24,7 +24,7 @@ You now set up required Terraform Cloud workspaces for the *workshop-1-tf-live* 
 
 ![0004](/images/3/5/0004.svg?featherlight=false&width=100pc)
 
-**5.** Choose **GitHub.com** VCS that you have added in the previous section - [3.4 Terraform Cloud General Settings](../4-Terraform-Cloud-General-Settings/).
+**5.** Choose **GitHub.com** VCS that you have added in the previous section - [3.4 Terraform Cloud General Settings](../4-terraform-cloud-general-settings/).
 
 ![0005](/images/3/5/0005.svg?featherlight=false&width=100pc)
 

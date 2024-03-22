@@ -31,7 +31,7 @@ You would take the recommendations to identify the Terraform modules needed to m
 
 #### Module Proposal
 
-As mentioned in previous section — [2.1 AWS Architecture](../1-AWS-Architecture/) , AnimeHub is simply divided into three main parts: web, app, and database: 
+As mentioned in previous section — [2.1 AWS Architecture](../1-aws-architecture/) , AnimeHub is simply divided into three main parts: web, app, and database: 
 
 - The **Web tier** requires an S3 bucket for static website hosting and CloudFront for content delivery.
 

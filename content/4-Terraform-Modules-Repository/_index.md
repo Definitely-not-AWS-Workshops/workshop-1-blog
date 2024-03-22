@@ -20,12 +20,12 @@ Check out the complete source code for this stage at [here](https://github.com/D
 
 #### Content
 
-1. [Network Module](1-Network-Module)
-2. [Image Repository Module](2-Image-Repository-Module)
-3. [Database Module](3-Database-Module)
-4. [Security Module](4-Security-Module)
-5. [Routing Module](5-Routing-Module)
-6. [App Module](6-App-Module)
-8. [Web Module](7-Web-Module)
-9. [Repository Release](8-Repository-Release)
+1. [Network Module](1-network-module)
+2. [Image Repository Module](2-image-repository-module)
+3. [Database Module](3-database-module)
+4. [Security Module](4-security-module)
+5. [Routing Module](5-routing-module)
+6. [App Module](6-app-module)
+8. [Web Module](7-web-module)
+9. [Repository Release](8-repository-release)
 <!-- need to remove parenthesis for path in Hugo 0.88.1 for Windows-->

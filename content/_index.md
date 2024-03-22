@@ -57,13 +57,13 @@ Visit the following Github repositories to find the complete workshop source cod
 
 1. [Introduction](./1-introduction/)
 2. [High-Level Design](./2-high-level-design/)
-3. [Preparation](./3-Preparation/)
-4. [Terraform Modules Repository](./4-Terraform-Modules-Repository/)
-5. [Terraform Live Repository](./5-Terraform-Live-Repository/)
-6. [AnimeHub Deployment](./6-AnimeHub-Deployment/)
-7. [Experiments](./7-Experiments/)
-8. [Cleanup](./8-Cleanup/)
-9. [Further Improvements](./9-Further-Improvements/)
+3. [Preparation](./3-preparation/)
+4. [Terraform Modules Repository](./4-terraform-modules-repository/)
+5. [Terraform Live Repository](./5-terraform-live-repository/)
+6. [AnimeHub Deployment](./6-animeHub-deployment/)
+7. [Experiments](./7-experiments/)
+8. [Cleanup](./8-cleanup/)
+9. [Further Improvements](./9-further-improvements/)
 <!-- need to remove parenthesis for path in Hugo 0.88.1 for Windows-->
 
 

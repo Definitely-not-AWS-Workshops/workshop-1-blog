@@ -128,7 +128,7 @@ variable "github_repo" {
 }
 ```
 
-Fill the following lines of code to *web/terraform.tfvars*. Replace *\<your-animehub-domain-name\>* to yours, mine is **animehub.tulna07.site**, for example. Replace *\<your-custom-alb-domain-name\>* to yours, mine is **app.tulna07.site** set in the previous section [5.6 App Module](../6-App-Module/) in *app/terraform.tfvars* file. Replace *\<your-github-username\>* to your GitHub username, mine is **tulna07**, for example.
+Fill the following lines of code to *web/terraform.tfvars*. Replace *\<your-animehub-domain-name\>* to yours, mine is **animehub.tulna07.site**, for example. Replace *\<your-custom-alb-domain-name\>* to yours, mine is **app.tulna07.site** set in the previous section [5.6 App Module](../6-app-module/) in *app/terraform.tfvars* file. Replace *\<your-github-username\>* to your GitHub username, mine is **tulna07**, for example.
 
 ```hcl
 region = "us-east-1"
