@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4. </b> "
 ---
 
-In this stage, you continue to develop the *workshop-1-tf-modules* repository, which was prepared in [3.1 Terraform Modules Repository](../../3-preparation/1-terraform-modules-repository/), with modules designed in [2.2 Terraform Modules](../2-high-level-design/2-terraform-modules/), such as network, image repository, database, security, routing, app, and web modules.
+In this stage, you continue to develop the *workshop-1-tf-modules* repository, which was prepared in [3.1 Terraform Modules Repository](../3-preparation/1-terraform-modules-repository/), with modules designed in [2.2 Terraform Modules](../2-high-level-design/2-terraform-modules/), such as network, image repository, database, security, routing, app, and web modules.
 
 Remember to navigate to the repository before going.
 
