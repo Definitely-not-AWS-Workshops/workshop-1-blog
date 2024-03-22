@@ -16,6 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  disablePathToLower = true
   
 [Languages]
 [Languages.en]
