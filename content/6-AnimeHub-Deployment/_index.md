@@ -112,7 +112,7 @@ git push --follow-tags
 
 **21.** Go to [AWS ECR console](https://console.aws.amazon.com/ecr).
 
-**22.** In the left sidebar, click **Repositories** under the **Private registry** dropdown. Click the *workshop-1* image repository.
+**22.** In the left sidebar, click **Repositories** under the **Private registry** dropdown. Click the **workshop-1** image repository.
 
 ![00012](/images/5/2/0009.svg?featherlight=false&width=100pc)
 
