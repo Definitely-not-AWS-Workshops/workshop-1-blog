@@ -34,6 +34,12 @@ variable "project_name" {
   description = "The name of the project"
   type        = string
 }
+
+variable "force_delete" {
+  description = "If true,  delete the repository even if it contains images"
+  type        = bool
+  default     = false
+}
 ```
 
 Fill the following lines of code to *image-repository/main.tf*:
@@ -46,6 +52,8 @@ resource "aws_ecr_repository" "main" {
   encryption_configuration {
     encryption_type = "AES256"
   }
+
+  force_delete = var.force_delete
 }
 
 resource "aws_ecr_registry_scanning_configuration" "main" {
@@ -59,6 +67,7 @@ resource "aws_ecr_registry_scanning_configuration" "main" {
     }
   }
 }
+
 ```
 
 Fill the following lines of code to *image-repository/outputs.tf*:

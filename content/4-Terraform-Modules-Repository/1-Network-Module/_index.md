@@ -13,6 +13,8 @@ network/
 │
 ├── vpc/
 │   
+├── locals.tf
+│   
 ├── main.tf
 │   
 ├── outputs.tf
@@ -125,6 +127,10 @@ resource "aws_vpc" "main" {
 #----------------------------------------------------------------------
 resource "aws_internet_gateway" "main" {
   count = local.has_public_subnet ? 1 : 0
+
+  tags = {
+    Name = var.name
+  }
 }
 
 resource "aws_internet_gateway_attachment" "main" {
@@ -175,7 +181,7 @@ resource "aws_route_table" "public" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "public-rtb"
+    Name = "${var.name}-public"
   }
 }
 
@@ -196,6 +202,10 @@ resource "aws_route_table_association" "public" {
 resource "aws_route_table" "private" {
   count  = length(var.private_subnets) / length(var.azs)
   vpc_id = aws_vpc.main.id
+
+  tags = {
+    Name = "${var.name}-private"
+  }
 }
 
 resource "aws_route_table_association" "private" {
@@ -203,7 +213,6 @@ resource "aws_route_table_association" "private" {
   route_table_id = element(aws_route_table.private[*].id, floor(length(aws_route_table.private) / length(var.azs)))
   subnet_id      = aws_subnet.private[count.index].id
 }
-
 ```
 
 Fill the following lines of code to *network/vpc/outputs.tf*:
@@ -301,10 +310,18 @@ variable "private_subnet_prefix" {
 Fill the following lines of code to *network/main.tf*:
 
 ```hcl
+locals {
+    resource_name = "${var.environment}-${var.project_name}"
+}
+```
+
+Fill the following lines of code to *network/main.tf*:
+
+```hcl
 module "vpc" {
   source = "./vpc"
 
-  name        = var.project_name
+  name        = local.resource_name
   environment = var.environment
 
   vpc_cidr = var.vpc_cidr

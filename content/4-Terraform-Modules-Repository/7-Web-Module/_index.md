@@ -281,6 +281,12 @@ variable "mfa_code" {
   sensitive   = true
   default     = ""
 }
+
+variable "force_destroy" {
+  description = "If true, remove all items in the bucket and then remove the bucket"
+  type = bool
+  default = false
+}
 ```
 
 Fill the following lines of code to *web/s3-web/main.tf*:
@@ -288,6 +294,7 @@ Fill the following lines of code to *web/s3-web/main.tf*:
 ```hcl
 resource "aws_s3_bucket" "main" {
   bucket = var.bucket_name
+  force_destroy = var.force_destroy
 }
 
 resource "aws_s3_bucket_policy" "allow_cloudfront" {
@@ -404,6 +411,12 @@ variable "gh_oidc_provider_arn" {
   description = "The arn of GitHub openid connect provider"
   type        = string
 }
+
+variable "s3_bucket_force_destroy" {
+  description = "If true, remove all items in the bucket and then remove the bucket"
+  type = bool
+  default = false
+}
 ```
 
 Fill the following lines of code to *web/main.tf*:
@@ -442,6 +455,7 @@ module "s3_web" {
   cloudfront_arn           = module.cloudfront.arn
   enable_bucket_versioning = var.enable_bucket_versioning
   mfa_code                 = var.mfa_code
+  force_destroy = var.s3_bucket_force_destroy
 }
 
 #----------------------------------------------------------------------

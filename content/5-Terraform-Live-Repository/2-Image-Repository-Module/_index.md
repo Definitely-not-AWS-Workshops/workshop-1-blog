@@ -78,6 +78,12 @@ variable "project_name" {
   description = "The name of the project"
   type        = string
 }
+
+variable "force_delete" {
+  description = "If true,  delete the repository even if it contains images"
+  type        = bool
+  default     = false
+}
 ```
 
 Fill the following lines of code to *image-repository/terraform.tfvars*:
@@ -86,6 +92,9 @@ Fill the following lines of code to *image-repository/terraform.tfvars*:
 region = "us-east-1"
 environment = "dev"
 project_name = "workshop-1"
+
+# Disable in real usage
+force_delete = true
 ```
 
 Fill the following lines of code to *image-repository/providers.tf*:
@@ -104,6 +113,8 @@ module "image_repository" {
 
   environment  = var.environment
   project_name = var.project_name
+
+  force_delete = var.force_delete
 }
 ```
 
@@ -155,57 +166,73 @@ git push
 
 ![0004](/images/5/2/0004.svg?featherlight=false&width=100pc)
 
-**7.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
+**7.** Wait until the plan is finished. After that, review the plan.
 
 ![0005](/images/5/2/0005.svg?featherlight=false&width=100pc)
 
-**8.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+**8.** If everything is fine, scroll down to the bottom and click **Confirm & apply**.
 
 ![0006](/images/5/2/0006.svg?featherlight=false&width=100pc)
 
-**9.** Clone this [repository](https://github.com/Definitely-not-AWS-Workshops/ip-printer.git).
+**9.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you.
+
+![0007](/images/5/2/0007.svg?featherlight=false&width=100pc)
+
+**10.** After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+
+![0008](/images/5/2/0008.svg?featherlight=false&width=100pc)
+
+**11.** Go to [AWS ECR console](https://console.aws.amazon.com/ecr/).
+
+**12.** In the left sidebar, click **Repositories** to check out your newly created repository.
+
+![0009](/images/5/2/0009.svg?featherlight=false&width=100pc)
+
+**13.** Turn on your [Docker Desktop](https://www.docker.com/products/docker-desktop/). You next push a small Docker image that print the IP address for testing the app tier.
+
+![00010](/images/5/2/00010.svg?featherlight=false&width=100pc)
+
+**14.** Clone this [repository](https://github.com/Definitely-not-AWS-Workshops/ip-printer.git).
 
 ```git
 git clone https://github.com/Definitely-not-AWS-Workshops/ip-printer.git
 ```
 
-**10.** Move inside the local repository you have just cloned.
+**15.** Move inside the local repository you have just cloned.
 
 ```git
 cd ip-printer
 ```
 
-**11.** Turn on your [Docker Desktop](https://www.docker.com/products/docker-desktop/). You next push a small Docker image that print the IP address for testing the app tier.
+**16.** Go to your AWS account homepage. Click the AWS username dropdown and then get your AWS account ID.
 
-**12.** Go to your AWS account homepage. Click the AWS username dropdown and then get your AWS account ID.
+![00011](/images/5/2/00011.svg?featherlight=false&width=100pc)
 
-![0007](/images/5/2/0007.svg?featherlight=false&width=100pc)
-
-**13.** Retrieve an authentication token and authenticate your Docker client to your registry. Replace *\<your-aws-account-id\>* with your AWS account ID from step **12**.
+**17.** Retrieve an authentication token and authenticate your Docker client to your registry. Replace *\<your-aws-account-id\>* with your AWS account ID from step **16**.
 
 ```git
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.com
 ```
 
-**14.** Build your Docker image using the following command.
+**18.** Build your Docker image using the following command.
 
 ```git
 docker build -t workshop-1 .
 ```
 
-**15.** After the build completes, tag your image so you can push the image to this repository. Replace *\<your-aws-account-id\>* with your AWS account ID from step **12**.
+**19.** After the build completes, tag your image so you can push the image to this repository. Replace *\<your-aws-account-id\>* with your AWS account ID from step **16**.
 
 ```git
 docker tag workshop-1:latest <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/workshop-1:v0.0.0
 ```
 
-**16.** Run the following command to push this image to your newly created AWS ECR repository. Replace *\<your-aws-account-id\>* with your AWS account ID from step **12**.
+**20.** Run the following command to push this image to your newly created AWS ECR repository. Replace *\<your-aws-account-id\>* with your AWS account ID from step **16**.
 
 ```git
 docker push <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/workshop-1:v0.0.0
 ```
 
-**17.** You successfully push the first image to the AWS ECR repository.
+**21.** You successfully push the first image to the AWS ECR repository.
 
-![0008](/images/5/2/0008.svg?featherlight=false&width=100pc)
+![00012](/images/5/2/00012.svg?featherlight=false&width=100pc)
 

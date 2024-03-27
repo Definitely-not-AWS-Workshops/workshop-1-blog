@@ -126,6 +126,12 @@ variable "github_repo" {
   description = "The GitHub repository that the GitHub Actions role trusts"
   type        = string
 }
+
+variable "s3_bucket_force_destroy" {
+  description = "If true, remove all items in the bucket and then remove the bucket"
+  type = bool
+  default = false
+}
 ```
 
 Fill the following lines of code to *web/terraform.tfvars*. Replace *\<your-animehub-domain-name\>* to yours, mine is **animehub.tulna07.site**, for example. Replace *\<your-custom-alb-domain-name\>* to yours, mine is **app.tulna07.site** set in the previous section [5.6 App Module](../6-app-module/) in *app/terraform.tfvars* file. Replace *\<your-github-username\>* to your GitHub username, mine is **tulna07**, for example.
@@ -139,6 +145,9 @@ domain_name     = <your-animehub-domain-name>
 alb_domain_name = <your-custom-alb-domain-name>
 github_org           = <your-github-username>
 github_repo          = "workshop-1-web-app"
+
+# Disable in production
+s3_bucket_force_destroy = true
 ```
 
 Fill the following lines of code to *web/providers.tf*:
@@ -167,8 +176,10 @@ module "web" {
   github_org  = var.github_org
   github_repo = var.github_repo
 
+  s3_bucket_force_destroy = var.s3_bucket_force_destroy
+
   # Enable for production
-  #   enable_bucket_versioning = true
+  # enable_bucket_versioning = true
 }
 ```
 
@@ -197,14 +208,46 @@ git push
 
 ![0002](/images/5/7/0002.svg?featherlight=false&width=100pc)
 
-**5.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
+**5.** Wait until the plan is finished. After that, review the plan. 
 
 ![0003](/images/5/7/0003.svg?featherlight=false&width=100pc)
 
-**6.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+**6.** If everything is fine, scroll down to the bottom and click **Confirm & apply**.
 
 ![0004](/images/5/7/0004.svg?featherlight=false&width=100pc)
 
-**7.** Note down the output of this module after applying, which is **gha_role_deploy_web_arn**. You are going to need the arn to set up your GitHub Actions. 
+**7.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. 
 
-![0008](/images/5/7/0005.svg?featherlight=false&width=100pc)
+![0005](/images/5/7/0005.svg?featherlight=false&width=100pc)
+
+**8.** After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources.
+
+![0006](/images/5/7/0006.svg?featherlight=false&width=100pc)
+
+**9.** Go to [AWS IAM console](https://console.aws.amazon.com/iam/).
+
+**10.** In the left sidebar, click **Roles** to check out your newly created roles. Filter with `gha-role-for-deploying-web` value to see your role.
+
+![0007](/images/5/7/0007.svg?featherlight=false&width=100pc)
+
+**11.** Go to [AWS S3 console](https://console.aws.amazon.com/s3/).
+
+**12.** In the left sidebar, click **Buckets** to check out your newly created bucket.
+
+![0008](/images/5/7/0008.svg?featherlight=false&width=100pc)
+
+**13.** Go to [AWS CloudFront console](https://console.aws.amazon.com/cloudfront/).
+
+**14.** In the left sidebar, click **Distributions** to check out your newly created distribution.
+
+![0009](/images/5/7/0009.svg?featherlight=false&width=100pc)
+
+**15.** Go to [AWS ACM console](https://console.aws.amazon.com/acm).
+
+**16.** In the left sidebar, click **List certificates** to check out your newly created certificate.
+
+![00010](/images/5/7/00010.svg?featherlight=false&width=100pc)
+
+**17.** Note down the output of this module after applying, which is **gha_role_deploy_web_arn**. You are going to need the arn to set up your GitHub Actions. 
+
+![00011](/images/5/7/00011.svg?featherlight=false&width=100pc)

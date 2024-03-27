@@ -792,7 +792,7 @@ module "gha_role" {
 
 resource "aws_iam_policy" "allow_deploy_app" {
   name        = "AllowDeployApp"
-  description = "IAM policy for pushing Docker image to ECR"
+  description = "IAM policy for deploying app to fargate"
 
   policy = templatefile("${path.module}/allow-deploy-app-policy.tpl", {
     ecs_execution_role_arn = data.aws_iam_role.ecs_task_execution.arn,

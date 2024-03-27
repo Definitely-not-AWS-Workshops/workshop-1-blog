@@ -208,10 +208,36 @@ git push
 
 ![0004](/images/5/1/0004.svg?featherlight=false&width=100pc)
 
-**8.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
+**8.** Wait until the plan is finished. After that, review the plan.
 
 ![0005](/images/5/1/0005.svg?featherlight=false&width=100pc)
 
-**9.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+**9.** If everything is fine, scroll down to the bottom and click **Confirm & apply**.
 
 ![0006](/images/5/1/0006.svg?featherlight=false&width=100pc)
+
+**10.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. 
+
+![0007](/images/5/1/0007.svg?featherlight=false&width=100pc)
+
+**11.** After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+
+![0008](/images/5/1/0008.svg?featherlight=false&width=100pc)
+
+**12.** Go to [AWS VPC console](https://console.aws.amazon.com/vpc/).
+
+**13.** In the left sidebar, click **Your VPCs** to check out your newly created VPC.
+
+![0009](/images/5/1/0009.svg?featherlight=false&width=100pc)
+
+**14.** In the left sidebar, click **Subnets** and then filter with `dev-workshop-1` value to check out your newly created subnets. 
+
+![00010](/images/5/1/00010.svg?featherlight=false&width=100pc)
+
+**15.** In the left sidebar, click **Route tables** to check out your newly created route tables.
+
+![00011](/images/5/1/00011.svg?featherlight=false&width=100pc)
+
+**16.** In the left sidebar, click **Internet gateways** to check out your newly created internet gateway. 
+
+![00012](/images/5/1/00012.svg?featherlight=false&width=100pc)

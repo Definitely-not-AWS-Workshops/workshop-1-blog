@@ -168,10 +168,24 @@ git push
 
 ![0004](/images/5/3/0004.svg?featherlight=false&width=100pc)
 
-**7.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
+**7.** Wait until the plan is finished. After that, review the plan. 
 
 ![0005](/images/5/3/0005.svg?featherlight=false&width=100pc)
 
-**8.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources. 
+**8.** If everything is fine, scroll down to the bottom and click **Confirm & apply**.
 
 ![0006](/images/5/3/0006.svg?featherlight=false&width=100pc)
+
+**9.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and provision AWS resources for you. 
+
+![0007](/images/5/3/0007.svg?featherlight=false&width=100pc)
+
+**10.** After Terraform has done the applying process, you may access your AWS account to view the Terraform-provided AWS resources.
+
+![0008](/images/5/3/0008.svg?featherlight=false&width=100pc)
+
+**11.** Go to [AWS DynamoDB console](https://console.aws.amazon.com/dynamodb/).
+
+**12.** In the left sidebar, click **Tables** to check out your newly created table.
+
+![0009](/images/5/3/0009.svg?featherlight=false&width=100pc)

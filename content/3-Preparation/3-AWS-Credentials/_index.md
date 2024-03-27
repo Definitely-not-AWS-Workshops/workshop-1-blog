@@ -8,7 +8,7 @@ pre : " <b> 3.3 </b> "
 
 Follow the steps below to obtain the required AWS access keys for Terraform Cloud settings. Ignore this section if you already have any.
 
-**1.** Go to your AWS account's **Console Home**. Select the dropdown from your AWS username and then choose **Security credentials**.
+**1.** Go to your AWS account's [Console Home](https://console.aws.amazon.com/). Select the dropdown from your AWS username and then choose **Security credentials**.
 
 ![0001](/images/3/3/0001.svg?featherlight=false&width=100pc)
 

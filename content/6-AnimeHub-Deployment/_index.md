@@ -46,8 +46,8 @@ The most interesting part here! In this section, you are going to deploy AnimeHu
 | `ECS_CLUSTER_NAME`  |  `dev-workshop-1` |
 |  `ECS_SERVICE_NAME` | `app` |
 |  `S3_BUCKET_NAME` | `dev-workshop-1` |
-|  `GHA_ROLE_FOR_DEPLOYING_BACKEND` | Enter the value you got from step **9** in the [5.6 App Module](../5-terraform-live-repository/6-app-module) section  |
-|  `GHA_ROLE_FOR_DEPLOYING_FRONTEND` | Enter the value you got from step **7** in the [5.7 Web Module](../5-terraform-live-repository/7-web-module) section |
+|  `GHA_ROLE_FOR_DEPLOYING_BACKEND` | Enter the value you got from step **20** in the [5.6 App Module](../5-terraform-live-repository/6-app-module) section  |
+|  `GHA_ROLE_FOR_DEPLOYING_FRONTEND` | Enter the value you got from step **17** in the [5.7 Web Module](../5-terraform-live-repository/7-web-module) section |
 
 **10.** After completing the previous step, you got the following secrects.
 
