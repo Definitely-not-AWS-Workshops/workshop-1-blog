@@ -38,7 +38,7 @@ The estimated duration for completing this workshop is **around 3 hours**.
 #### Costs
 Assume that you own a domain name. The services used in this workshop charge per usage, although most of them have a free tier, so unless you used the free tier for other workloads, it will cost you **under $0.5** to run this workshop. Please look at the different services' pricing pages to see their cost.
 
-{{% notice warning %}}
+{{% notice note %}}
 To avoid incurring charges, move to the [8. Cleanup](./8-cleanup/) section after the workshop to clean up the resources provisioned.
 {{% /notice %}}
 
