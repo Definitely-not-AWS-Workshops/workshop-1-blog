@@ -184,7 +184,7 @@ git push
 
 **11.** Go to [AWS ECR console](https://console.aws.amazon.com/ecr/).
 
-**12.** In the left sidebar, click **Repositories** to check out your newly created repository.
+**12.** In the left sidebar, click **Repositories** under the **Private registry** dropdown to check out your newly created repository.
 
 ![0009](/images/5/2/0009.svg?featherlight=false&width=100pc)
 
@@ -232,7 +232,14 @@ docker tag workshop-1:latest <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.c
 docker push <your-aws-account-id>.dkr.ecr.us-east-1.amazonaws.com/workshop-1:v0.0.0
 ```
 
-**21.** You successfully push the first image to the AWS ECR repository.
+**21.** Go to [AWS ECR console](https://console.aws.amazon.com/ecr).
 
-![00012](/images/5/2/00012.svg?featherlight=false&width=100pc)
+**22.** In the left sidebar, click **Repositories** under the **Private registry** dropdown. Click the *workshop-1* image repository.
+
+![00012](/images/5/2/0009.svg?featherlight=false&width=100pc)
+
+**23.** Click **Images**. You successfully push the first image to the AWS ECR repository.
+
+![00014](/images/5/2/00012.svg?featherlight=false&width=100pc)
+
 

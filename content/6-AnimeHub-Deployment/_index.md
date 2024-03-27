@@ -110,21 +110,50 @@ git push --follow-tags
 
 ![00011](/images/6/00011.svg?featherlight=false&width=100pc)
 
-**21.** Check out AnimeHub at at your domain name. Mine is [https://animehub.tulna07.site](https://animehub.tulna07.site/), for example. Yes! you are successfully access AnimeHub with **https** and your own domain name.
+**21.** Go to [AWS ECR console](https://console.aws.amazon.com/ecr).
 
-![00012](/images/6/00012.svg?featherlight=false&width=100pc)
+**22.** In the left sidebar, click **Repositories** under the **Private registry** dropdown. Click the *workshop-1* image repository.
 
-**22.** Let us try to share something with other Anime fans worldwide. Click **Share**.
+![00012](/images/5/2/0009.svg?featherlight=false&width=100pc)
+
+**23.** Click **Images**, you then see your newly pushed image with **v1.0.0** tag.
+
+![00013](/images/6/00012.svg?featherlight=false&width=100pc)
+
+**24.** Go to [AWS ECS console](https://console.aws.amazon.com/ecs).
+
+**25.** In the left sidebar, click **Task definitions** and then the **app** task definition.
 
 ![00013](/images/6/00013.svg?featherlight=false&width=100pc)
 
-**23.** Fill out the **Anime Name** field as `Naruto Shippuden - Chapter 391`, the **Link** field as `https://www.youtube.com/watch?v=Pf5JDzTT8xE`, and the **Description** field as `The Returns of Uchiha Madara`. Otherwise, post your favorite anime instead. Click **Submit**.
+**26.** Choose the most recent app, **app:2** in this case.
 
 ![00014](/images/6/00014.svg?featherlight=false&width=100pc)
 
-**24.** Hurray! Your anime goes out to anime enthusiasts worldwide. You can share the link to your friends. Click **Watch** to enjoy now.
+**27.** Scroll down to the **Containers** section, click **container-1**.
 
 ![00015](/images/6/00015.svg?featherlight=false&width=100pc)
 
+**28.** Your task definition now use the new image you just pushed.
+
 ![00016](/images/6/00016.svg?featherlight=false&width=100pc)
+
+
+**29.** Check out AnimeHub at at your domain name. Mine is [https://animehub.tulna07.site](https://animehub.tulna07.site/), for example. Yes! you are successfully access AnimeHub with **https** and your own domain name.
+
+![00017](/images/6/00017.svg?featherlight=false&width=100pc)
+
+**30.** Let us try to share something with other Anime fans worldwide. Click **Share**.
+
+![00018](/images/6/00018.svg?featherlight=false&width=100pc)
+
+**31.** Fill out the **Anime Name** field as `Naruto Shippuden - Chapter 391`, the **Link** field as `https://www.youtube.com/watch?v=Pf5JDzTT8xE`, and the **Description** field as `The Returns of Uchiha Madara`. Otherwise, post your favorite anime instead. Click **Submit**.
+
+![00019](/images/6/00019.svg?featherlight=false&width=100pc)
+
+**32.** Hurray! Your anime goes out to anime enthusiasts worldwide. You can share the link to your friends. Click **Watch** to enjoy now.
+
+![00020](/images/6/00020.svg?featherlight=false&width=100pc)
+
+![00021](/images/6/00021.svg?featherlight=false&width=100pc)
 
