@@ -489,7 +489,7 @@ git push
 
 **27.** Navigate to **dev-app** Terraform Cloud workspace interface. You see a new run automatically triggered with the commit message **update  app module version to v2.0.0** in step **24**. Click **See details**.
 
-![00017](/images/5/6/00017svg?featherlight=false&width=100pc)
+![00017](/images/5/6/00017.svg?featherlight=false&width=100pc)
 
 **28.** Wait until the plan is finished. After that, review the plan. 
 
