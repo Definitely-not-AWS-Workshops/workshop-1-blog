@@ -204,7 +204,7 @@ git clone https://github.com/Definitely-not-AWS-Workshops/ip-printer.git
 cd ip-printer
 ```
 
-**16.** Go to your AWS account homepage. Click the AWS username dropdown and then get your AWS account ID.
+**16.** Go to your AWS [hompage](https://console.aws.amazon.com/). Click the AWS username dropdown and then get your AWS account ID.
 
 ![00011](/images/5/2/00011.svg?featherlight=false&width=100pc)
 

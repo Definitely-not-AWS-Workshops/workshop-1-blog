@@ -455,13 +455,13 @@ git tag -a "v2.0.0" -m "release v2.0.0"
 git push --follow-tags
 ```
 
-**25.** Update your source app module in the *workshop-1-tf-live* local repository to **v2.0.0**.
+**25.** Update your source app module in the *workshop-1-tf-live* local repository to **v2.0.0**. Remember to replace *\<your-github-username\>* with your GitHub username.
 
 In *environments/dev/app/main.tf* file, change
 
 ```hcl
 module "app" {
-  source = "git::https://github.com/tulna07/workshop-1-tf-modules.git//modules/app?ref=v1.0.0"
+  source = "git::https://github.com/<your-github-username>/workshop-1-tf-modules.git//modules/app?ref=v1.0.0"
  
   # Other inputs
   # ...
@@ -472,7 +472,7 @@ to
 
 ```hcl
 module "app" {
-  source = "git::https://github.com/tulna07/workshop-1-tf-modules.git//modules/app?ref=v2.0.0"
+  source = "git::https://github.com/<your-github-username>/workshop-1-tf-modules.git//modules/app?ref=v2.0.0"
  
   # Other inputs
   # ...
