@@ -112,7 +112,7 @@ to
 read_capacity = 3
 ```
 
-**3.** Commit and push the commit to the GitHub repository.
+**4.** Commit and push the commit to the GitHub repository.
 
 ```git
 git add . && \
@@ -120,30 +120,30 @@ git commit -m "change the dynamodb read capacity units" && \
 git push --set-upstream origin change-dynamodb-rcu
 ```
 
-**4.** Go to your GitHub *workshop-1-tf-live* repository. Click **Compare & pull request**.
+**5.** Go to your GitHub *workshop-1-tf-live* repository. Click **Compare & pull request**.
 
 ![0008](/images/7/0008.svg?featherlight=false&width=100pc)
 
-**5.** Click **Create pull request**.
+**6.** Click **Create pull request**.
 
 ![0009](/images/7/0009.svg?featherlight=false&width=100pc)
 
-**6.** Terraform Cloud will trigger a plan. You can click **Details** to see plan's outputs in Terraform Cloud. If everything is fine, click **Merge pull request**.
+**7.** Terraform Cloud will trigger a plan. You can click **Details** to see plan's outputs in Terraform Cloud. If everything is fine, click **Merge pull request**.
 
 ![00010](/images/7/00010.svg?featherlight=false&width=100pc)
 
-**7.** Move to your **dev-database** Terraform Cloud workspace interface. You see a new run automatically triggered. Click **See details**.
+**8.** Move to your **dev-database** Terraform Cloud workspace interface. You see a new run automatically triggered. Click **See details**.
 
 ![00011](/images/7/00011.svg?featherlight=false&width=100pc)
 
-**8.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
+**9.** Wait until the plan is finished. After that, review the plan. If everything is fine, scroll down to the bottom and click **Confirm & apply**.
 
 ![00012](/images/7/00012.svg?featherlight=false&width=100pc)
 
-**9.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and change the DynamoDB table's read capacity units. After Terraform has done the applying process, you may access your AWS account to view the changed read capacity units in the DynamoDB table. 
+**10.** Optionally, add a comment `Look good to me!`. Click **Confirm plan**, Terraform will run apply and change the DynamoDB table's read capacity units. After Terraform has done the applying process, you may access your AWS account to view the changed read capacity units in the DynamoDB table. 
 
 ![00013](/images/7/00013.svg?featherlight=false&width=100pc)
 
-**10.** Your table read capacity units now change to 3.
+**11.** Your table read capacity units now change to 3.
 
 ![00014](/images/7/00014.svg?featherlight=false&width=100pc)
