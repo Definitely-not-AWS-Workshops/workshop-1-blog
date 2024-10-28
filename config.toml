@@ -1,4 +1,4 @@
-# relativeURLs = true
+relativeURLs = true
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
@@ -10,8 +10,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
-  editURL = "https://definitely-not-aws-workshops.github.io/workshop-1-blog/"
-  baseURL = "https://definitely-not-aws-workshops.github.io/workshop-1-blog/"
+  editURL = ""
   description = ""
   author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true
