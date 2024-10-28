@@ -1,4 +1,4 @@
-relativeURLs = true
+baseURL = 'https://definitely-not-aws-workshops.github.io/workshop-1-blog/'
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
