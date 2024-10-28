@@ -1,5 +1,5 @@
 relativeURLs = true
-baseURL = 'https://github.com/Definitely-not-AWS-Workshops/workshop-1-blog/'
+baseURL = 'https://Definitely-not-AWS-Workshops/workshop-1-blog/'
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
