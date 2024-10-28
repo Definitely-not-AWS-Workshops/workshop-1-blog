@@ -11,6 +11,7 @@ home = [ "HTML", "RSS", "JSON"]
   themeVariant = "workshop"
   # Git hub repo link
   editURL = "https://Definitely-not-AWS-Workshops/workshop-1-blog/"
+  baseURL = "https://Definitely-not-AWS-Workshops/workshop-1-blog/"
   description = ""
   author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true
